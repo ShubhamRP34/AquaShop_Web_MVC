@@ -1,0 +1,20 @@
+@keyframes sample {
+    0% {
+        background-image: url("/resources/KJU8FVd-harley-davidson-wallpaper.jpg");
+    }
+
+    33.33% {
+        background-image: url("/resources/pexels-roberto-nickson-2559941.jpg");
+
+    }
+
+    66.66% {
+    background-image: url("/resources/WoPRkyf-winter-wallpaper.jpg");
+
+    }
+
+    100% {
+        background-image: url("/resources/wp1826563-age-of-empires-wallpapers.jpg");
+
+    }
+}

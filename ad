@@ -1,0 +1,8 @@
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+core.editor="C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=Shubham Pardale
+user.email=shubham2vaishu@gmail.com
+safe.directory=D:/trial/git training/Aqua-Shop
