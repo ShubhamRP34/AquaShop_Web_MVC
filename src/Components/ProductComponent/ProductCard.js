@@ -6,12 +6,13 @@ export default function ProductCard(props) {
     // const [firstValue, setfirstValue] = useState("Title");
     // const [secondValue, setsecondValue] = useState("Title");
     // const [buttonTitle, setbuttonTitle] = useState("Title");
+ 
 
     return (
 
 
         <div>
-            <div className="card mb-3 text-start mx-1" style={{width: "15rem"}}>
+            <div id = "prod" className="card mb-3 text-start mx-1" style={{width: "15rem" , boxShadow : "7px 5px 15px 0 black"}}>
                 <img src={props.imgurl} className="card-img-top" alt="..." style={{height : "170px", objectFit : "cover", width : "100%"}}/>
                     <div className="card-body">
                         <h5 className="card-title">{props.name}</h5>

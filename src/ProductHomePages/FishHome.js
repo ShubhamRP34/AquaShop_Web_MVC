@@ -143,6 +143,7 @@
 // }
 
 import React, { useState, useEffect } from 'react';
+import ChildSlider from '../Components/ProductComponent/ChildSlider';
 import ProductCard from '../Components/ProductComponent/ProductCard';
 import Slider from '../Components/ProductComponent/Slider';
 
@@ -222,13 +223,30 @@ export default function FishHome() {
                     />
                 )}
 
-                <div className="card-group row-cols-md-4 g-1">
-                    {products.length === 6 ? 
-                    products : 
-                    // conso(products) : 
-                    <p>Loading products...</p>}
+                {
+                (sliderImages.length > 0 ? 
+                <ChildSlider 
+                    imgurl_0={sliderImages[0]}
+                    imgurl_1={sliderImages[1]}
+                    imgurl_2={sliderImages[2]}/>
+                : <p>Wait for few seconds</p> )
+                }
+
+                <div style={{
+                    backgroundColor: "#e0e0e0", padding: "10px", margin: "8px", borderRadius: "20px"
+                    , boxShadow: "0px 0px 20px 0 black"
+                }}>
+
+                    <h1 style={{ textAlign: "left", marginLeft: "5px" }}>My Favourite</h1><br />
+                    <div className="card-group row-cols-md-4 g-1">
+
+                        {products.length === 6 ? products : <p>Loading products...</p>}
+                    </div>
                 </div>
             </div>
+            
+            
+            
         </div>
     );
 }

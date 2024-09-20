@@ -30,26 +30,27 @@ export default function Slider(props) {
 
 
     return (
-        <div id="carouselExampleAutoplaying" className="carousel slide mb-4" data-bs-ride="carousel"  style={{height : "400px"}}>
+        <div id="carouselExampleAutoplaying" className="carousel slide mb-4" data-bs-ride="carousel"  style={{height : "400px", margin : "8px"}}>
 
-            <div className="carousel-inner">
+            <div className="carousel-inner" style={{borderRadius : "20px", boxShadow : "0px 5px 15px 0 black"}}>
+
                 <div className="carousel-item active" style = {{height : "100%"}}>
                     <img src={props.imgurl_0} className="d-block w-100" alt="Image 1" style = {{height : "400px"}}/>
                 </div>
                 <div className="carousel-item" style = {{height : "100%"}}>
-                    <img src={props.imgurl_1} className="d-block w-100" alt="Image 2" style = {{height : "400px"}}/>
+                    <img src={props.imgurl_1} className="d-block w-100" alt="Image 2" style = {{height : "400px" }}/>
                 </div>
                 <div className="carousel-item" style = {{height : "100%"}}>
-                    <img src={props.imgurl_2} className="d-block w-100" alt="Image 3" style = {{height : "400px"}}/>
+                    <img src={props.imgurl_2} className="d-block w-100" alt="Image 3" style = {{height : "400px" }}/>
                 </div>
                 <div className="carousel-item" style = {{height : "100%"}}>
-                    <img src={props.imgurl_3} className="d-block w-100" alt="Image 4" style = {{height : "400px"}}/>
+                    <img src={props.imgurl_3} className="d-block w-100" alt="Image 4" style = {{height : "400px" }}/>
                 </div>
                 <div className="carousel-item" style = {{height : "100%"}}>
-                    <img src={props.imgurl_4} className="d-block w-100" alt="Image 5" style = {{height : "400px"}}/>
+                    <img src={props.imgurl_4} className="d-block w-100" alt="Image 5" style = {{height : "400px" }}/>
                 </div>
                 <div className="carousel-item" style = {{height : "100%"}}>
-                    <img src={props.imgurl_5} className="d-block w-100" alt="Image 5" style = {{height : "400px"}}/>
+                    <img src={props.imgurl_5} className="d-block w-100" alt="Image 5" style = {{height : "400px" }}/>
                 </div>
             </div>
 
